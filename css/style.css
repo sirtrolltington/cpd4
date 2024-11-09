@@ -1,0 +1,245 @@
+/*Mobile Phone Size*/
+@media screen and (min-width: 400px){
+
+	html{
+		scroll-behavior: smooth;
+	}
+
+	body{
+		font-size: 20px;
+		text-align: center;
+		background-color:#223C33;
+		font-family: 'Roboto', 'Arial', sans-serif;
+	}
+
+	/* Navigation */
+	nav{
+		color: #202020;
+		text-decoration: underline;
+		background-color: #202020;
+	}
+
+	/* Navigation Hover */
+	nav a:hover{
+		font-weight: bolder;
+		text-transform: uppercase;
+	}
+
+	/*Different hyperlink text color for web link in body*/ 
+	a.web{ 
+		color: black; 
+		text-decoration: underline; 
+	}
+
+	/*Animated hyperlink to meet website*/ 
+	a.animated-link{ 
+		color:white; 
+		animation-name: test; 
+		animation-duration: 5s; 
+	}
+
+	@keyframes test{
+		from {color:white;}
+		to {color: #F7D147;}
+	}
+
+	a { 
+		color: white; 
+	}
+
+	a:visited { 
+		color: red; 
+	}
+
+	/* Navigation List Items */
+	nav li{
+		padding: 10px 19px 8px 6px;
+		color: #2448AA; 
+	}
+
+	/* Header */
+	header{
+		text-align: center;
+		background-color: #2448AA;
+	}
+
+	/* Header Hover Effect */
+	header a:hover{
+		text-align: left;
+		color: #ff0000;
+		background-color: #FFFFFF;
+	}
+
+	/* Focus Elements */
+	*:focus{
+		border: 2px solid #ff0000;
+	}
+
+	/* Headers */
+	h1{
+		color: #FFFFFF;
+		font-weight: bold;
+		font-size: 25px;
+		padding-top: 20px;
+		padding-bottom: 15px;
+		font-family: Helvetica, 'Arial', sans-serif;
+		text-shadow: 1px 1px 2px #FFFFFF, 0 0 25px #000000;
+	}
+
+	h2{
+		color: #FFFFFF;
+		font-weight: bold;
+		font-size: 25px;
+		padding-top: 20px;
+		padding-bottom: 15px;
+		font-family: Helvetica, 'Arial', sans-serif;
+		text-shadow: 1px 1px 2px #FFFFFF, 0 0 25px #000000;
+	}
+
+	h3{
+		color: black;
+		font-weight: bold;
+		font-size: 25px;
+		padding-top: 20px;
+		padding-bottom: 15px;
+		font-family: Helvetica, 'Arial', sans-serif;
+		text-shadow: 1px 1px 2px #FFFFFF, 0 0 25px #000000;
+	}
+
+	/* Header Hover Effects */
+	h1:hover, h2:hover, h3:hover{
+		transform: scale(1.2);
+		-webkit-transform: scale(1.2);
+	}
+
+	/* Summary Paragraph */
+	.summary{
+		color: #FFFFFF;
+		padding: 30px;
+	}
+
+	/* Team Results */
+	#team-results{
+		font-size: 30px;
+		padding-left: 60px;
+		padding-bottom: 30px;
+		background-color: #202020;
+	}
+
+	/* Athlete Images */
+	img{
+		padding-bottom: 20px;
+		display: block; 
+		margin-left: auto; 
+		margin-right: auto; 
+
+		overflow: hidden; 
+		object-fit: cover; 
+		border-radius: 50%; 
+
+		transition: transform 0.3s ease; 
+	}
+
+	/*Athlete Images Hover Transition*/ 
+	img:hover{ 
+		transform: scale(1.2); 
+	}
+
+	/* Dictionary List */
+	dl{
+		padding-bottom: 20px;
+		color: #FFFFFF; 
+	}
+
+	/* Footer */
+	footer{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background-color: #85C2C9;
+	}
+
+	/* Table */ 
+	table { 
+		border-collapse: separate; 
+		text-indent: initial; 
+		border-spacing: 2px; 
+		margin-left: auto; 
+		margin-right: auto; 
+		color: white; 
+	}
+
+	th {
+		position: sticky; 
+		top: 0; 
+		background-color: #202020;
+		z-index: 10; 
+		padding: 10px; 
+	}
+
+	tr { 
+		color: white; 
+	}
+
+	td { 
+		color: white; 
+	}
+
+	figure { 
+		text-align: center; 
+		color: #FFFFFF; 
+	}
+
+	p{ 
+		color: #FFFFFF; 
+	}
+
+	p.footertext{ 
+		color: black; 
+	}
+
+	#progress{
+		position: fixed; 
+		z-index: 10; 
+		left: 0; 
+		top: 0; 
+		width: 200vw; 
+		height: 1vh; 
+		transform-origin: 0 50%;
+		transform: scaleX(0); 
+		background: #F7D147; 
+	}
+	
+@media (min-width: 1440px) { 
+
+	section#individual-results, section#gallery{ 
+		display: grid;
+		justify-content: center; 
+		align-content: center; 
+		grid-template-columns: 30% 30% 30%; 
+		grid-template-rows: auto; 
+		padding: 30px; 
+	}
+
+	section#individual-results > h2:nth-child(1){
+		grid-column: 1 / -1; 
+		padding: 30px; 
+	}
+	
+	section#gallery > h2:nth-child(1){
+		grid-column: 1 / -1; 
+		padding: 30px; 
+	}
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+	
+	html{
+		scroll-behavior: auto; 
+	}
+
+	nav a:hover, header a:hover, h1:hover, h2:hover, h3:hover{
+		transition: none;
+		text-transform: none;
+	}
+}
+}

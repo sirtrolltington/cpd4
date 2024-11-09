@@ -1,0 +1,28 @@
+h2{ 
+    text-align:center; 
+}
+
+section#individual-results{ 
+    display: grid; 
+    grid-template-columns:30% 30% 30%; 
+}
+
+table { 
+    border-collapse: separate; 
+    text-indent: initial; 
+    border-spacing: 2px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+/*         <link rel="stylesheet" type="text/css" href="css/reset.css"> */ 
+
+	/* Athlete Images */
+	img{
+		padding-bottom: 20px;
+		display: block; 
+		margin-left: auto; 
+		margin-right: auto; 
+		max-width: 300px;
+		height: auto;  
+	}
